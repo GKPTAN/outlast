@@ -1,0 +1,7 @@
+@charset "UTF-8"; /* usado para definir que o idioma usado no site tem caracteres especiais como o ^, ~ etc...*/
+
+* {
+    margin: 0; /* espaçamento externo dos elementos */
+    padding: 0; /*espaçamento interno dos elementos*/
+    box-sizing: border-box; /* usado para calcular as dimensões de acordo com o tamanho dos elementos*/
+}

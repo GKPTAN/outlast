@@ -1,0 +1,57 @@
+body { 
+    width: 100vw; /* vw - medida de acordo com a largura do dispositivo (celulares, pc...)*/
+    height: 100vh; /* vh - medida de acordo com a altura do dispositivo (celulares, pc...)*/
+    overflow: hidden; /* serve para esconder conteúdo adicional dos elementos verticalmente ou horizontalmente */
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 200%;
+}
+
+img#ativo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.barra-lateral-esquerda {
+    display: flex; /* serve para flexibilizar os elementos de um bloco para que eles se encaixem de acordo com a largura do bloco */
+    justify-content: center; /* justify-content serve para centralizar os elementos na horizontal */
+    align-items: center; /* serve para centralizar os elementos na vertical */
+    position: absolute; /* serve para definir que esse elemento vai ter um posicionamento absoluto independente de qualquer regra, podendo estar em qualquer lugar */
+    top: 0; /* define o posicionamento em relação ao topo */
+    left: 0; /* define o posicionamento em relação ao lado esquerdo */
+    background-color: rgba(0, 0, 0, 0.322); /* cor de fundo */
+    color: white;
+    width: 3vw;
+    height: 100vh;
+    cursor: pointer; /* essa propriedade define que o ponteiro do mouse vai apontar e interagir com esse elemento*/
+    transition: all 0.3s ease-in-out;
+}
+
+.barra-lateral-esquerda:hover {
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.barra-lateral-direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    width: 3vw;
+    height: 100vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.barra-lateral-direita:hover {
+    background-color: rgba(0, 0, 0, 0.521);
+}
