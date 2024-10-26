@@ -8,6 +8,7 @@ img {
     position: absolute;
     top: 0;
     left: 200%;
+    transition: all 0.3s ease-in-out;
 }
 
 img#ativo {
@@ -16,6 +17,7 @@ img#ativo {
     left: 0;
     width: 100vw;
     height: 100vh;
+    transition: all 0.3s ease-in-out;
 }
 
 .barra-lateral-esquerda {
@@ -31,6 +33,7 @@ img#ativo {
     height: 100vh;
     cursor: pointer; /* essa propriedade define que o ponteiro do mouse vai apontar e interagir com esse elemento*/
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .barra-lateral-esquerda:hover {
@@ -50,6 +53,7 @@ img#ativo {
     height: 100vh;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .barra-lateral-direita:hover {
