@@ -8,7 +8,7 @@ img {
     position: absolute;
     top: 0;
     left: 200%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* define uma transição para todas as propriedades do elemento em 0.3s */
 }
 
 img#ativo {
@@ -27,16 +27,16 @@ img#ativo {
     position: absolute; /* serve para definir que esse elemento vai ter um posicionamento absoluto independente de qualquer regra, podendo estar em qualquer lugar */
     top: 0; /* define o posicionamento em relação ao topo */
     left: 0; /* define o posicionamento em relação ao lado esquerdo */
-    background-color: rgba(0, 0, 0, 0.322); /* cor de fundo */
+    background-color: rgba(0, 0, 0, 0.322); /* cor de fundo rgba (red, green, blue, transparência) */
     color: white;
     width: 3vw;
     height: 100vh;
     cursor: pointer; /* essa propriedade define que o ponteiro do mouse vai apontar e interagir com esse elemento*/
     transition: all 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 2; /* serve para tirar um elemento da ordem dos elementos de um site */
 }
 
-.barra-lateral-esquerda:hover {
+.barra-lateral-esquerda:hover { /* :hover - uma pseudoclasse que é usada para definir uma ação quando o ponteiro do mouse estiver em cima do elemento */
     background-color: rgba(0, 0, 0, 0.521);
 }
 
