@@ -5,19 +5,9 @@ body {
 }
 
 img {
-    position: absolute;
-    top: 0;
-    left: 200%;
-    transition: all 0.3s ease-in-out; /* define uma transição para todas as propriedades do elemento em 0.3s */
-}
-
-img#ativo {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* define uma transição para todas as propriedades do elemento em 0.3s */
 }
 
 .barra-lateral-esquerda {
