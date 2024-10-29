@@ -2,6 +2,7 @@ body {
     width: 100vw; /* vw - medida de acordo com a largura do dispositivo (celulares, pc...)*/
     height: 100vh; /* vh - medida de acordo com a altura do dispositivo (celulares, pc...)*/
     overflow: hidden; /* serve para esconder conteúdo adicional dos elementos verticalmente ou horizontalmente */
+    background-color: black;
 }
 
 img {
