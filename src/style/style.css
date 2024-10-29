@@ -1,21 +1,60 @@
 body { 
     width: 100vw; /* vw - medida de acordo com a largura do dispositivo (celulares, pc...)*/
     height: 100vh; /* vh - medida de acordo com a altura do dispositivo (celulares, pc...)*/
-    overflow: hidden; /* serve para esconder conteúdo adicional dos elementos verticalmente ou horizontalmente */
     background-color: black;
+    overflow-y: hidden;
+    color: white;
 }
 
-img {
-    width: 100vw;
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+}
+
+.slider-content {
+    display: flex;
+    width: 900%;
+    height: auto;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box img {
+    width: 100%;
     height: 100vh;
-    transition: all 0.3s ease-in-out; /* define uma transição para todas as propriedades do elemento em 0.3s */
+}
+
+.img-mobile {
+    display: none;
+}
+
+div.information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    z-index: 1000;
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+
+div.information .description {
+    text-align: justify;
 }
 
 .barra-lateral-esquerda {
     display: flex; /* serve para flexibilizar os elementos de um bloco para que eles se encaixem de acordo com a largura do bloco */
     justify-content: center; /* justify-content serve para centralizar os elementos na horizontal */
     align-items: center; /* serve para centralizar os elementos na vertical */
-    position: absolute; /* serve para definir que esse elemento vai ter um posicionamento absoluto independente de qualquer regra, podendo estar em qualquer lugar */
+    position: fixed; /* serve para definir que esse elemento vai ter um posicionamento absoluto independente de qualquer regra, podendo estar em qualquer lugar */
     top: 0; /* define o posicionamento em relação ao topo */
     left: 0; /* define o posicionamento em relação ao lado esquerdo */
     background-color: rgba(0, 0, 0, 0.322); /* cor de fundo rgba (red, green, blue, transparência) */
@@ -35,7 +74,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.322);
