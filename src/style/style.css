@@ -2,7 +2,7 @@ body {
     width: 100vw; /* vw - medida de acordo com a largura do dispositivo (celulares, pc...)*/
     height: 100vh; /* vh - medida de acordo com a altura do dispositivo (celulares, pc...)*/
     background-color: black;
-    overflow-y: hidden;
+    overflow-y: hidden; /* overflow-y :serve para esconder conteúdo adicional dos elementos verticalmente */
     color: white;
 }
 
@@ -10,7 +10,7 @@ section.slider {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    padding: 0 !important;
+    padding: 0 !important; /* !important - define uma propriedade de um elemento como a prioridade máxima acima de todas as outras */
 }
 
 .slider-content {
@@ -23,7 +23,7 @@ section.slider {
     width: 25%;
     height: auto;
     position: relative;
-    text-align: center;
+    text-align: center; /* centraliza o conteúdo ou o texto em relação ao bloco */
 }
 
 .slide-box img {
@@ -32,14 +32,14 @@ section.slider {
 }
 
 .img-mobile {
-    display: none;
+    display: none; /* display se refere ao layout do elemento, display; none; refere-se que o elemento não aparecerá na tela */ 
 }
 
 div.information {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 25%;
+    flex-direction: column; /* direção dos elementos-filho em forma de coluna quando estão em um elemento com display flex */ 
+    gap: 20px; /* espaçamento entre os filhos */
+    width: 25%; 
     z-index: 1000;
     position: absolute;
     top: 75%;
@@ -47,7 +47,7 @@ div.information {
 }
 
 div.information .description {
-    text-align: justify;
+    text-align: justify; /* ajusta o texto do bloco para preencher todo o espaço disponível */
 }
 
 .barra-lateral-esquerda {
